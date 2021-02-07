@@ -16,6 +16,9 @@ if (renderer.indexOf ("VirtualBox") != -1){
 if (renderer.indexOf ("VBox") != -1){ 
 	alert ('VirtualBox Detected!')
 } 
+if (renderer.indexOf ("Google") != -1){ 
+	alert ('VirtualBox Detected! Do not use Google swiftshader')
+} 
 if (renderer.indexOf ("VM") != -1){ 
 	alert ('VirtualBox Detected!')
 } 
