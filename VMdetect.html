@@ -11,9 +11,15 @@ var renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
 console.log(vendor);
 console.log(renderer);
 if (renderer.indexOf("VMware") != -1) { 
-	alert ('VMWare Detected!!')
+	alert ('VirtualBox Detected!!')
 }
 if (renderer.indexOf ("VirtualBox") != -1){ 
+	alert ('VirtualBox Detected!')
+} 
+if (renderer.indexOf ("VBox") != -1){ 
+	alert ('VirtualBox Detected!')
+} 
+if (renderer.indexOf ("VM") != -1){ 
 	alert ('VirtualBox Detected!')
 } 
 if (renderer.indexOf ("Intel") != -1){
@@ -21,6 +27,9 @@ if (renderer.indexOf ("Intel") != -1){
 } 
 if (renderer.indexOf ("NVIDIA") != -1){
 	alert ('You are using NVIDIA Display Adapter, No VM detected!')
+} 
+if (renderer.indexOf ("AMD") != -1){
+	alert ('You are using AMD Display Adapter, No VM detected!')
 } 
 </script>
 	</head>
