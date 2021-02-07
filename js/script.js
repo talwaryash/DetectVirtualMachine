@@ -28,9 +28,13 @@ if (renderer.indexOf ("NVIDIA") != -1){
 if (renderer.indexOf ("AMD") != -1){
 	alert ('You are using AMD Display Adapter, No VM detected!')
 } 
-if (vendor.indexOf ("ARM") != -1){
-	alert ('You are using Mobile Device, No VM detected!')
+if (renderer.indexOf ("Mali") != -1){
+	alert ('You are using Android Device, No VM detected!')
 } 
-if (vendor.indexOf ("Qualcomm") != -1){
-	alert ('You are using Mobile Device, No VM detected!')
+if (renderer.indexOf ("Adreno") != -1){
+	alert ('You are using Android Device, No VM detected!')
 } 
+if (renderer.indexOf ("Apple") != -1){
+	alert ('You are using Apple Device, No VM detected!')
+} 
+
