@@ -19,6 +19,9 @@ if (renderer.indexOf ("VBox") != -1){
 if (renderer.indexOf ("Google") != -1){ 
 	alert ('VirtualBox Detected! Do not use Google swiftshader')
 } 
+if (renderer.indexOf ("Microsoft Basic") != -1){ 
+	alert ('VirtualBox Detected! You are using Microsoft Basic Display Adapter')
+} 
 if (renderer.indexOf ("VM") != -1){ 
 	alert ('VirtualBox Detected!')
 } 
