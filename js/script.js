@@ -31,3 +31,6 @@ if (renderer.indexOf ("AMD") != -1){
 if (vendor.indexOf ("ARM") != -1){
 	alert ('You are using Mobile Device, No VM detected!')
 } 
+if (vendor.indexOf ("Qualcomm") != -1){
+	alert ('You are using Mobile Device, No VM detected!')
+} 
