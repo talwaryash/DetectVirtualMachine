@@ -1,0 +1,19 @@
+<html>
+<script>
+var canvas = document.createElement('canvas');
+var gl = canvas.getContext('webgl');
+
+var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+var vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+var renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+
+console.log(vendor);
+console.log(renderer);
+if (renderer.indexOf("VMware") != -1) { //ANGLE
+	alert ('VMWare Detected!!')
+}
+if (renderer.indexOf ("VirtualBox") != -1){ //ANGLE
+	alert ('VirtualBox Detected!!')
+} 
+</script>
+</html>
